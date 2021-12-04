@@ -1,5 +1,8 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
+windowenv/
+venv/
+build.rar
 *.py[cod]
 *$py.class
 

@@ -2,7 +2,9 @@
 
 import socket
 
+##HOST = 'cc.duongduhoc.com'  # Standard loopback interface address (localhost)
 HOST = '127.0.0.1'  # Standard loopback interface address (localhost)
+#
 PORT = 65432        # Port to listen on (non-privileged ports are > 1023)
 
 while True:
@@ -11,10 +13,11 @@ while True:
         s.listen()
         conn, addr = s.accept()
         with conn:
-            print('Connected by', addr)
-            while True:
+                print('Connected by', addr)
                 data = conn.recv(1024)
                 if not data:
                     break
+                z = input('to Client: ')
+                conn.sendall(bytes(z, encoding='utf8'))
                 conn.sendall(data)
 

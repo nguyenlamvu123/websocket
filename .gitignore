@@ -1,6 +1,5 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
-windowenv/
 build.rar
 *.py[cod]
 *$py.class
@@ -107,6 +106,7 @@ celerybeat.pid
 .env
 .venv
 env/
+windowenv/
 venv/
 ENV/
 env.bak/
